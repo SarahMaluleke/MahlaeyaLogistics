@@ -1,0 +1,22 @@
+.main-buttons{
+background-color: rgba(218, 62, 65, 1);
+color: white;
+border: none;
+font-weight: normal;
+font-size: 20px;
+border-radius: 10px;
+padding-left: 16px;
+padding-right: 16px;
+padding-top: 10px;
+padding-bottom: 10px;
+cursor: pointer;
+transition: opacity 0.15s;
+
+}
+.main-buttons:hover{
+opacity: 0.8;
+}
+
+.main-buttons:active{
+  opacity: 0.4;
+}
