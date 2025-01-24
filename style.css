@@ -21,3 +21,7 @@ opacity: 0.8;
 .main-buttons:active{
   opacity: 0.4;
 }
+
+.Service-pictures{
+  width: 464px;
+}
