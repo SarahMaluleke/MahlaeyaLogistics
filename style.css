@@ -1,91 +1,65 @@
-.main-buttons{
-background-color: rgba(218, 62, 65, 1);
-color: white;
-border: none;
-font-weight: normal;
-font-size: 20px;
-font-family: Anek Latin;
-border-radius: 10px;
-padding-left: 16px;
-padding-right: 16px;
-padding-top: 10px;
-padding-bottom: 10px;
-cursor: pointer;
-transition: opacity 0.15s;
-
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.main-buttons:hover{
-opacity: 0.8;
-}
-
-.main-buttons:active{
-  opacity: 0.4;
-}
-
-.Service-pictures{
-  width: 464px;
-}
-
-.navbar1{
-  background-color: rgba(218, 62, 65, 1);
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
-.navbar{
-  background-color: white;
-  padding-left: 15px;
-  padding-right: 15px;
-  padding-top: 6px;
-  padding-bottom: 6px;
-}
-
-.navdiv{
-display: flex;
-align-items: center;
-justify-content: space-between;
-}
-
-li{
-list-style: none;
-display: inline-block;
-}
-
-li b{
+nav{
+  font-family: Inter;
+  font-weight: normal;
   color: white;
-  font-family: Inter;
-  font-size: 20px;
-  margin-right: 25px;
-  font-weight: normal;
+  padding: 0 50px;
+  width: 100%;
 }
 
-li a{
-  color: rgba(182, 7, 10, 1);
-  font-family: Inter;
-  font-size: 20px;
-  margin-right: 25px;
-  font-weight: normal;
-}
-
-buttons{
-  background-color: rgba(218, 62, 65, 1);
-  border-radius: 20px;
-  padding: 10px;
-  width: 120px;
-}
-
-button a{
-  color: black;
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: normal;
+.flex{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .logo{
-width: 71px;
-height: 71px;
-position: 29px;
+  height: 71px;
+  width: 71px;
+  cursor: pointer;
+}
+.navbar-one{
+  background-color:rgba(218, 62, 65, 1);
+  font-size: 12px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.left > div + div{
+  margin-left: 0px;
+}
+
+.right > div{
+margin-left: 40px;
+}
+
+.left> div:hover,
+.right > div:hover{
+  color: black;
+  transition: all 0.5s;
+}
+
+span{
+  margin-left: 5px;
+}
+
+.navbar-second{
+  background-color: white;
+  height: 102px;
+}
+
+li{
+  list-style: none;
+}
+
+a{
+  text-decoration: none;
+  text-transform: capitalize;
+  font-size: 20px;
+  color: rgba(182, 7, 10, 1);
 }
