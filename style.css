@@ -22,6 +22,7 @@ nav{
   height: 71px;
   width: 71px;
   cursor: pointer;
+
 }
 .navbar-one{
   background-color:rgba(218, 62, 65, 1);
@@ -31,11 +32,11 @@ nav{
 }
 
 .left > div + div{
-  margin-left: 0px;
+  margin-left: 20px;
 }
 
 .right > div{
-margin-left: 40px;
+margin-right: 20px;
 }
 
 .left> div:hover,
@@ -44,13 +45,11 @@ margin-left: 40px;
   transition: all 0.5s;
 }
 
-span{
-  margin-left: 5px;
-}
-
 .navbar-second{
   background-color: white;
-  height: 102px;
+  height: 100px;
+  position: sticky;
+  top: -5px;
 }
 
 li{
@@ -62,4 +61,36 @@ a{
   text-transform: capitalize;
   font-size: 20px;
   color: rgba(182, 7, 10, 1);
+  margin-left: 30px;
+}
+
+section{
+  width: 100%;
+  height: 150vh;
+  background: url(Picture/HomePage\ Background.jpg) no-repeat center center/ cover;
+}
+
+.GetQuote{
+border-radius: 5px;
+width: 139px;
+height: 33px;
+background-color: white;
+color: black;
+border: none;
+font-family: Inter;
+font-weight: normal;
+font-size: 18px;
+
+}
+
+.SearchButton{
+  border-radius: 20px;
+  width: 120px;
+  height: 43px;
+  border: none;
+  background-color: rgba(218, 62, 65, 1);
+  color: black;
+  font-family: Inter;
+  font-size: 20px;
+  font-weight: normal;
 }
