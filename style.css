@@ -100,22 +100,29 @@ a:hover {
 .Services:hover,
 .Support:hover,
 .About:hover,
-.Home:hover,
+.Home:hover{
+opacity: 0.8;
+transition: opacity 0.15s;
+}
+
 .TikTok:hover,
 .Facebook:hover,
 .Instagram:hover {
-  color: rgb(56, 29, 29);
-  transition: color 0.5s;
+  color: black;
+  transition: opacity 0.15s;
 }
 
 .Services:active,
 .Support:active,
 .About:active,
-.Home:active,
+.Home:active{
+opacity: 0.4;
+}
+
 .TikTok:active,
 .Facebook:active,
 .Instagram:active {
-  opacity: 0.2;
+  opacity: 0.4;
 }
 
 button, .GetQuote, .loginButton {
@@ -131,6 +138,7 @@ button, .GetQuote, .loginButton {
   background-color: white;
   color: black;
   font-size: 18px;
+  transition: opacity 0.15s;
 }
 
 .GetQuote:hover {
@@ -148,6 +156,7 @@ button, .GetQuote, .loginButton {
   background-color: rgba(218, 62, 65, 1);
   color: black;
   font-size: 20px;
+  transition: opacity 0.15s;
 }
 
 .loginButton:hover {
