@@ -12,6 +12,58 @@ nav{
   width: 100%;
 }
 
+.navbar-one{
+  background-color:rgba(218, 62, 65, 1);
+  font-size: 12px;
+  height: 50px;
+  cursor: pointer;
+}
+
+.email-link{
+  color: white; 
+  text-decoration: none; 
+  transition: opacity 0.15s;
+}
+
+.email-link:hover{
+  color: black;
+  transition: all 0.5s;
+}
+
+.email-link:active{
+  opacity: 0.4;
+}
+
+.phone-link{
+  color: white; 
+  text-decoration: none; 
+  transition: opacity 0.15s;
+}
+
+.phone-link:hover{
+  color: black;
+  transition: all 0.5s;
+}
+
+.phone-link:active{
+  opacity: 0.4;
+}
+
+.location-link{
+  color: white; 
+  text-decoration: none; 
+  transition: opacity 0.15s;
+}
+
+.location-link:hover{
+  color: black;
+  transition: all 0.5s;
+}
+
+.location-link:active{
+  opacity: 0.4;
+}
+
 .flex{
   display: flex;
   justify-content: space-between;
@@ -25,12 +77,6 @@ nav{
   margin-left: -30px;
 
 }
-.navbar-one{
-  background-color:rgba(218, 62, 65, 1);
-  font-size: 12px;
-  height: 50px;
-  cursor: pointer;
-}
 
 .left > div + div{
   margin-left: 20px;
@@ -38,12 +84,6 @@ nav{
 
 .right > div{
 margin-right: 20px;
-}
-
-.left> div:hover,
-.right > div:hover{
-  color: black;
-  transition: all 0.5s;
 }
 
 .navbar-second{
