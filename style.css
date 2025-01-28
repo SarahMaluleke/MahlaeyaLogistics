@@ -57,7 +57,7 @@ li{
   list-style: none;
 }
 
-a{
+li > a{
   text-decoration: none;
   text-transform: capitalize;
   font-family: Inter;
@@ -125,4 +125,10 @@ color: black;
 margin-left: 720px;
 margin-right: 4px;
 cursor: pointer;
+}
+
+.navbar-one .left .Location,
+.navbar-one .left .Phone,
+.navbar-one .left .Email {
+    margin-right: 20px;
 }
