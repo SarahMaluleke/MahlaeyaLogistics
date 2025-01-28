@@ -1,174 +1,172 @@
-*{
+* {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-nav{
-  font-family: Inter;
+body, nav, ul, a, button {
+  font-family: Inter, sans-serif;
   font-weight: normal;
   color: white;
-  padding: 0 50px;
-  width: 100%;
-}
-
-.navbar-one{
-  background-color:rgba(218, 62, 65, 1);
-  font-size: 12px;
-  height: 50px;
-  cursor: pointer;
-}
-
-.email-link{
-  color: white; 
-  text-decoration: none; 
   transition: opacity 0.15s;
 }
 
-.email-link:hover{
-  color: black;
-  transition: all 0.5s;
+a {
+  text-decoration: none;
 }
 
-.email-link:active{
-  opacity: 0.4;
-}
-
-.phone-link{
-  color: white; 
-  text-decoration: none; 
-  transition: opacity 0.15s;
-}
-
-.phone-link:hover{
-  color: black;
-  transition: all 0.5s;
-}
-
-.phone-link:active{
-  opacity: 0.4;
-}
-
-.location-link{
-  color: white; 
-  text-decoration: none; 
-  transition: opacity 0.15s;
-}
-
-.location-link:hover{
-  color: black;
-  transition: all 0.5s;
-}
-
-.location-link:active{
-  opacity: 0.4;
-}
-
-.flex{
+.flex {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.logo{
-  height: 71px;
-  width: 71px;
-  cursor: pointer;
-  margin-left: -30px;
-
+nav {
+  padding: 0 50px;
+  width: 100%;
 }
 
-.left > div + div{
+.navbar-one {
+  background-color: rgba(218, 62, 65, 1);
+  font-size: 12px;
+  height: 50px;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.navbar-one .left > div + div {
   margin-left: 20px;
 }
 
-.right > div{
-margin-right: 20px;
+.navbar-one .right > div {
+  margin-right: 20px;
 }
 
-.navbar-second{
+.navbar-one .left .Location,
+.navbar-one .left .Phone,
+.navbar-one .left .Email {
+  margin-right: 20px;
+}
+
+.navbar-second {
   background-color: white;
   height: 100px;
   position: sticky;
   top: -5px;
 }
 
-li{
+.navbar-second ul li {
   list-style: none;
 }
 
-li > a{
-  text-decoration: none;
+.navbar-second ul li > a {
   text-transform: capitalize;
-  font-family: Inter;
   font-size: 20px;
   font-weight: normal;
   color: rgba(182, 7, 10, 1);
   margin-left: 30px;
-  text-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2),
-               0px 1px 4px rgba(0, 0, 0, 0.2);
-  
+  text-shadow: 
+    0px 0px 15px rgba(0, 0, 0, 0.2),
+    0px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-section{
-  width: 100%;
-  height: 150vh;
-  background: url(Picture/HomePage\ Background.jpg) no-repeat center center/ cover;
-}
-
-.GetQuote{
-border-radius: 5px;
-width: 139px;
-height: 33px;
-background-color: white;
-color: black;
-border: none;
-font-family: Inter;
-font-weight: normal;
-font-size: 18px;
-transition: opacity 0.15s;
-cursor: pointer;
-}
-
-.GetQuote:hover{
+nav > ul > i:hover {
   opacity: 0.8;
+  transition: all 0.5s;
 }
 
-.GetQuote:active{
+nav > ul > i:active {
   opacity: 0.4;
-  }
+}
 
-.loginButton{
-  border-radius: 20px;
-  width: 120px;
-  height: 43px;
-  border: none;
-  background-color: rgba(218, 62, 65, 1);
+.navbar-second > ul > i {
   color: black;
-  font-family: Inter;
-  font-size: 20px;
-  font-weight: normal;
-  transition: opacity 0.15s;
+  margin-left: 720px;
+  margin-right: 4px;
   cursor: pointer;
 }
 
-.loginButton:hover{
+a[href^="mailto:"], 
+a.location-link, 
+a.phone-link {
+  color: white;
+}
+
+a:hover {
+  color: black;
+  transition: color 0.5s;
+}
+
+.Services:hover,
+.Support:hover,
+.About:hover,
+.Home:hover,
+.TikTok:hover,
+.Facebook:hover,
+.Instagram:hover {
+  color: rgb(56, 29, 29);
+  transition: color 0.5s;
+}
+
+.Services:active,
+.Support:active,
+.About:active,
+.Home:active,
+.TikTok:active,
+.Facebook:active,
+.Instagram:active {
+  opacity: 0.2;
+}
+
+button, .GetQuote, .loginButton {
+  border: none;
+  cursor: pointer;
+  transition: opacity 0.15s;
+}
+
+.GetQuote {
+  border-radius: 5px;
+  width: 140px;
+  height: 35px;
+  background-color: white;
+  color: black;
+  font-size: 18px;
+}
+
+.GetQuote:hover {
   opacity: 0.8;
 }
 
-.loginButton:active{
-opacity: 0.4;
+.GetQuote:active {
+  opacity: 0.4;
 }
 
-.navbar-second > ul > i{
-color: black;
-margin-left: 720px;
-margin-right: 4px;
-cursor: pointer;
+.loginButton {
+  border-radius: 20px;
+  width: 120px;
+  height: 43px;
+  background-color: rgba(218, 62, 65, 1);
+  color: black;
+  font-size: 20px;
 }
 
-.navbar-one .left .Location,
-.navbar-one .left .Phone,
-.navbar-one .left .Email {
-    margin-right: 20px;
+.loginButton:hover {
+  opacity: 0.8;
+}
+
+.loginButton:active {
+  opacity: 0.4;
+}
+
+section {
+  width: 100%;
+  height: 150vh;
+  background: url(Picture/HomePage\ Background.jpg) no-repeat center center / cover;
+}
+
+.logo {
+  height: 71px;
+  width: 71px;
+  cursor: pointer;
+  margin-left: -30px;
 }
