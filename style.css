@@ -9,6 +9,7 @@ body, nav, ul, a, button {
   font-weight: normal;
   color: white;
   transition: opacity 0.15s;
+  position: relative;
 }
 
 a {
@@ -27,7 +28,7 @@ nav {
 }
 
 .navbar-one {
-  background-color: rgba(218, 62, 65, 1);
+  background-color: rgba(182, 7, 10, 1);
   font-size: 12px;
   height: 50px;
   cursor: pointer;
@@ -64,7 +65,7 @@ nav {
   font-size: 20px;
   font-weight: normal;
   color: rgba(182, 7, 10, 1);
-  margin-left: 30px;
+  margin-left: 40px;
   text-shadow: 
     0px 0px 15px rgba(0, 0, 0, 0.2),
     0px 1px 4px rgba(0, 0, 0, 0.2);
@@ -100,7 +101,7 @@ a:hover {
 .Services:hover,
 .Support:hover,
 .About:hover,
-.Home:hover{
+.HomeText:hover{
 opacity: 0.8;
 transition: opacity 0.15s;
 }
@@ -115,7 +116,7 @@ transition: opacity 0.15s;
 .Services:active,
 .Support:active,
 .About:active,
-.Home:active{
+.HomeText:active{
 opacity: 0.4;
 }
 
@@ -167,7 +168,7 @@ button, .GetQuote, .loginButton {
   opacity: 0.4;
 }
 
-section {
+.Home {
   width: 100%;
   height: 150vh;
   background: url(Picture/HomePage\ Background.jpg) no-repeat center center / cover;
@@ -178,4 +179,29 @@ section {
   width: 71px;
   cursor: pointer;
   margin-left: -30px;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+section {
+  padding: 100px 20px;
+  height: auto;
+  text-align: center;
+}
+
+.login{
+  position: relative;
+  height: 100vh;
+  display: grid;
+  align-items: center;
+}
+
+.login-image{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
 }
