@@ -202,7 +202,7 @@ button, .GetQuote, .loginButton {
   color: white;
   text-align: left;
   position: relative;
-  top: 130px;
+  top: 194px;
 }
 
 .Home > h1{
@@ -212,7 +212,7 @@ font-weight: bold;
 color: white;
 text-align: left;
 position: relative;
-top: 135px;
+top: 196px;
 }
 .Home > p{
   font-family: Anek Latin;
@@ -221,7 +221,7 @@ top: 135px;
   color: white;
   text-align: left;
   position: relative;
-  top: 140px;
+  top: 198px;
 }
 
 .logo {
