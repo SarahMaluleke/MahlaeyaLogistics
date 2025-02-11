@@ -54,6 +54,7 @@ nav {
   height: 100px;
   position: sticky;
   top: -5px;
+  z-index: 3;
 }
 
 .navbar-second ul li {
@@ -190,18 +191,35 @@ button, .GetQuote, .loginButton {
   z-index: 2;
 }
 
+.Home > h2{
+  font-family: Anek Latin;
+  font-weight: normal;
+  font-size: 18px;
+  color: white;
+  text-align: left;
+  top: 50px; 
+  left: 65px;
+}
+
 .Home > h1{
 font-family: Anek Latin;
 font-size: 60px;
-font-weight: bolder;
+font-weight: bold;
 color: white;
+text-align: left;
+top: 10px; 
+left: 65px;
 }
-.Home > p1{
+.Home > p{
   font-family: Anek Latin;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 36px;
   color: white;
+  text-align: left;
+  top: 1px; 
+  left: 65px;
 }
+
 .logo {
   height: 71px;
   width: 71px;
