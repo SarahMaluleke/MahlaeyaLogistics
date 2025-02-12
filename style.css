@@ -91,9 +91,13 @@ a:hover {
   transition: color 0.5s;
 }
 
-.Services:hover,
-.Support:hover,
-.About:hover,
+a:active{
+  opacity: 0.4;
+}
+
+.ServicesText:hover,
+.SupportText:hover,
+.AboutText:hover,
 .HomeText:hover {
   opacity: 0.8;
   transition: opacity 0.15s;
@@ -106,9 +110,9 @@ a:hover {
   transition: opacity 0.15s;
 }
 
-.Services:active,
-.Support:active,
-.About:active,
+.ServicesText:active,
+.SupportText:active,
+.AboutText:active,
 .HomeText:active {
   opacity: 0.4;
 }
@@ -159,7 +163,7 @@ button, .GetQuote, .loginButton {
   opacity: 0.4;
 }
 
-/* Apply overlay to all sections */
+/* Apply overlay and blur to all sections */
 .section1::before,
 .section2::before,
 .section3::before,
@@ -170,7 +174,8 @@ button, .GetQuote, .loginButton {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  background: rgba(0, 0, 0, 0.5); /* Semi-transparent overlay */
+  backdrop-filter: blur(1px); /* Apply blur effect to everything behind the overlay */
   z-index: 1; /* Ensure overlay is below the text */
 }
 
@@ -200,7 +205,7 @@ button, .GetQuote, .loginButton {
   height: 70svh; /* Reduced height to cut more of the top */
   background-image: url(Picture/HomePage\ Background.jpg);
   background-size: 100% auto;
-  background-position: center top;
+  background-position: center 15%;
   background-repeat: no-repeat;
   position: relative;
   display: flex;
