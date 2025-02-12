@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body, nav, ul, a, button {
   font-family: Inter, sans-serif;
   font-weight: normal;
