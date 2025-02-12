@@ -24,7 +24,7 @@ a {
 
 /* Navbar One */
 .navbar-one {
-  background-color: rgba(182, 7, 10, 1);
+  background-color: rgba(218, 62, 65, 1);
   font-size: 12px;
   height: 50px;
   padding: 0 50px;
@@ -159,14 +159,40 @@ button, .GetQuote, .loginButton {
   opacity: 0.4;
 }
 
-.section2::before {
+/* Apply overlay to all sections */
+.section1::before,
+.section2::before,
+.section3::before,
+.section4::before {
   content: "";
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.5); /* Adjust opacity as needed */
+  z-index: 1; /* Ensure overlay is below the text */
+}
+
+/* Ensure text is above the overlay */
+.section1 *,
+.section2 *,
+.section3 *,
+.section4 * {
+  position: relative;
+  z-index: 2; /* Ensure text is above the overlay */
+}
+
+/* Add background images or colors to other sections */
+.section1,
+.section2,
+.section3,
+.section4 {
+  position: relative; /* Required for absolute positioning of ::before */
+  background-size: cover;
+  background-position: center;
+  padding: 100px 20px; /* Adjust padding as needed */
+  text-align: center;
 }
 
 .section1 {
@@ -183,21 +209,6 @@ button, .GetQuote, .loginButton {
   align-items: flex-start;
   padding-left: 50px;
   overflow: hidden;
-}
-
-.section1::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-}
-
-.section1 * {
-  position: relative;
-  z-index: 2;
 }
 
 .section1 h2 {
