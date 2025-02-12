@@ -1,3 +1,4 @@
+/* General Styles */
 * {
   margin: 0;
   padding: 0;
@@ -9,7 +10,6 @@ body, nav, ul, a, button {
   font-weight: normal;
   color: white;
   transition: opacity 0.15s;
-  position: relative;
 }
 
 a {
@@ -22,17 +22,13 @@ a {
   align-items: center;
 }
 
-nav {
-  padding: 0 50px;
-  width: 100%;
-}
-
+/* Navbar One */
 .navbar-one {
   background-color: rgba(182, 7, 10, 1);
   font-size: 12px;
   height: 50px;
+  padding: 0 50px;
   cursor: pointer;
-  transition: opacity 0.15s;
 }
 
 .navbar-one .left > div + div {
@@ -49,11 +45,13 @@ nav {
   margin-right: 20px;
 }
 
+/* Navbar Two */
 .navbar-second {
   background-color: white;
   height: 100px;
+  padding: 0 50px;
   position: sticky;
-  top: -5px;
+  top: 0;
   z-index: 3;
 }
 
@@ -72,15 +70,6 @@ nav {
     0px 1px 4px rgba(0, 0, 0, 0.2);
 }
 
-nav > ul > i:hover {
-  opacity: 0.8;
-  transition: all 0.5s;
-}
-
-nav > ul > i:active {
-  opacity: 0.4;
-}
-
 .navbar-second > ul > i {
   color: black;
   margin-left: 720px;
@@ -88,6 +77,7 @@ nav > ul > i:active {
   cursor: pointer;
 }
 
+/* Links and Buttons */
 a[href^="mailto:"], 
 a.location-link, 
 a.phone-link {
@@ -102,9 +92,9 @@ a:hover {
 .Services:hover,
 .Support:hover,
 .About:hover,
-.HomeText:hover{
-opacity: 0.8;
-transition: opacity 0.15s;
+.HomeText:hover {
+  opacity: 0.8;
+  transition: opacity 0.15s;
 }
 
 .TikTok:hover,
@@ -117,8 +107,8 @@ transition: opacity 0.15s;
 .Services:active,
 .Support:active,
 .About:active,
-.HomeText:active{
-opacity: 0.4;
+.HomeText:active {
+  opacity: 0.4;
 }
 
 .TikTok:active,
@@ -140,7 +130,6 @@ button, .GetQuote, .loginButton {
   background-color: white;
   color: black;
   font-size: 18px;
-  transition: opacity 0.15s;
 }
 
 .GetQuote:hover {
@@ -158,7 +147,6 @@ button, .GetQuote, .loginButton {
   background-color: rgba(218, 62, 65, 1);
   color: black;
   font-size: 20px;
-  transition: opacity 0.15s;
 }
 
 .searchButton:hover {
@@ -171,13 +159,18 @@ button, .GetQuote, .loginButton {
 
 .Home {
   width: 100%;
-  height: 80svh;
+  height: 70svh; /* Reduced height to cut more of the top */
   background-image: url(Picture/HomePage\ Background.jpg);
-  position: relative;
+  background-size: 100% auto;
+  background-position: center top;
   background-repeat: no-repeat;
-  background-position: center;
-  background-size: contain;
-  
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding-left: 50px;
+  overflow: hidden;
 }
 
 .Home::before {
@@ -195,64 +188,61 @@ button, .GetQuote, .loginButton {
   z-index: 2;
 }
 
-.Home > h2{
+.Home h2 {
   font-family: Anek Latin;
   font-weight: normal;
   font-size: 18px;
   color: white;
-  text-align: left;
-  position: relative;
-  top: 194px;
 }
 
-.Home > h1{
-font-family: Anek Latin;
-font-size: 60px;
-font-weight: bold;
-color: white;
-text-align: left;
-position: relative;
-top: 196px;
+.Home h1 {
+  font-family: Anek Latin;
+  font-size: 60px;
+  font-weight: bold;
+  color: white;
+  margin: 10px 0;
 }
-.Home > p{
+
+.Home p {
   font-family: Anek Latin;
   font-weight: normal;
   font-size: 36px;
   color: white;
-  text-align: left;
-  position: relative;
-  top: 198px;
 }
 
+/* Logo */
 .logo {
   height: 71px;
   width: 71px;
   cursor: pointer;
-  margin-left: -30px;
 }
 
-html{
-  scroll-behavior: smooth;
-}
-
+/* Sections */
 section {
   padding: 100px 20px;
-  height: auto;
   text-align: center;
-
 }
 
-.search{
-  position: relative;
-  height: 100vh;
-  display: grid;
-  align-items: center;
-}
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-one, .navbar-second {
+    padding: 0 20px;
+  }
 
-.search-image{
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center;
+  .navbar-second ul li > a {
+    margin-left: 20px;
+    font-size: 16px;
+  }
+
+  .Home {
+    padding-left: 20px;
+  }
+
+  .Home h1 {
+    font-size: 40px;
+  }
+
+  .Home p {
+    font-size: 24px;
+  }
 }
