@@ -218,28 +218,44 @@ button, .GetQuote, .loginButton {
   align-items: flex-start;
   padding-left: 50px;
   overflow: hidden;
+  padding-top: 300px;
 }
 
 .section1 h2 {
   font-family: Anek Latin;
   font-weight: normal;
-  font-size: 18px;
+  font-size: 10px;
   color: white;
+  margin: 60 0 0;
 }
 
 .section1 h1 {
   font-family: Anek Latin;
-  font-size: 60px;
+  font-size: 50px;
   font-weight: bold;
   color: white;
-  margin: 10px 0;
+  margin: 70 0 0;
 }
 
 .section1 p {
   font-family: Anek Latin;
   font-weight: normal;
-  font-size: 36px;
+  font-size: 26px;
   color: white;
+  margin: 80px 0 0;
+}
+
+section .paragraph {
+  font-family: 'Anek Latin', sans-serif;
+  font-weight: normal;
+  font-size: 16px; 
+  color: white; 
+  margin: 50px 0 0; /* Add space above and below the paragraph */
+  padding: 50 50px; /* Align text horizontally (x-axis) with the section1 content */
+  line-height: 1.6; /* Adjust line height for better readability */
+  text-align: left; /* Align text to the left */
+  max-width: 800px; /* Optional: Limit paragraph width for better readability */
+  z-index: 3;
 }
 
 .logo {
