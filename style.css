@@ -174,7 +174,7 @@ section::before {
   height: 100%;
   background: rgba(0, 0, 0, 0.5);
   backdrop-filter: blur(1px); 
-  z-index: 1; 
+  z-index: 0; 
 }
 
 section {
@@ -187,7 +187,7 @@ section {
 
 section * {
   position: relative;
-  z-index: 2; 
+  z-index: 1; 
 }
 
 .section1 {
@@ -198,7 +198,6 @@ section * {
   background-size: 100% auto;
   background-position: center 15%;
   background-repeat: no-repeat;
-  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -206,44 +205,48 @@ section * {
   padding-left: 50px;
   overflow: hidden;
   padding-top: 300px;
+  z-index: 2;
 }
 
 .section1 h1 {
   font-family: Anek Latin;
   font-size: 50px;
-  font-weight: bold;
+  font-weight: bolder;
   color: white;
+  text-align: left;
 }
 
 .section1 h2 {
   font-family: Anek Latin;
-  font-weight: normal;
-  font-size: 10px;
+  font-weight: bold;
+  font-size: 15px;
   color: white;
+  text-align: left;
 }
 
 .section1 h3 {
   font-family: Anek Latin;
-  font-weight: normal;
+  font-weight: bold;
   font-size: 26px;
   color: white;
+  text-align: left;
 }
 
-.section1 h4 {
+.section1 p{
   font-family: 'Anek Latin', sans-serif;
   font-weight: normal;
   font-size: 16px; 
   color: white;
-  position: absolute; 
+  position: relative; 
   margin: 50px 0 0; 
   padding: 50 50px; 
   line-height: 1.6; 
   text-align: left; 
   max-width: 800px; 
   z-index: 3;
-  left: 50px;
-  top: 80%;
+  top: 20%;
 }
+
 
 .logo {
   height: 71px;
@@ -261,6 +264,8 @@ section {
   .navbar-one, .navbar-second {
     padding: 0 20px;
   }
+
+  
 
   .navbar-second ul li > a {
     margin-left: 20px;
