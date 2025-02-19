@@ -1,286 +1,42 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+body{  
+  margin-top: 0;
+  margin-left: 0;
+  margin-right: 0;
+  background-color: hsl(0, 0%, 45%);
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
-html {
-  scroll-behavior: smooth;
+.background-image img{
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100vh;
+  overflow-x: hidden;
 }
 
-body, nav, ul, a, button {
-  font-family: Inter, sans-serif;
-  font-weight: normal;
-  color: white;
-  transition: opacity 0.15s;
-}
-
-a {
-  text-decoration: none;
-}
-
-.flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-
-.navbar-one {
-  background-color: rgba(218, 62, 65, 1);
-  font-size: 12px;
-  height: 50px;
-  padding: 0 50px;
-  cursor: pointer;
-  position: relative;
-  z-index: 2;
-}
-
-.navbar-one .left > div + div {
-  margin-left: 20px;
-}
-
-.navbar-one .right > div {
-  margin-right: 20px;
-}
-
-.navbar-one .left .Location,
-.navbar-one .left .Phone,
-.navbar-one .left .Email {
-  margin-right: 20px;
-}
-
-/* Navbar Two */
-.navbar-second {
-  background-color: white;
-  height: 100px;
-  padding: 0 50px;
-  position: sticky;
-  top: 0;
-  z-index: 3;
-}
-
-.navbar-second ul li {
-  list-style: none;
-}
-
-.navbar-second ul li > a {
-  text-transform: capitalize;
-  font-size: 20px;
-  font-weight: normal;
-  color: rgba(182, 7, 10, 1);
-  margin-left: 40px;
-  text-shadow: 
-    0px 0px 15px rgba(0, 0, 0, 0.2),
-    0px 1px 4px rgba(0, 0, 0, 0.2);
-}
-
-.navbar-second > ul > i {
-  color: black;
-  margin-left: 720px;
-  margin-right: 4px;
-  cursor: pointer;
-}
-
-a[href^="mailto:"], 
-a.location-link, 
-a.phone-link {
-  color: white;
-}
-
-a:hover {
-  color: black;
-  transition: color 0.5s;
-}
-
-a:active{
-  opacity: 0.4;
-}
-
-.Services:hover,
-.Support:hover,
-.About:hover,
-.Home:hover {
-  opacity: 0.8;
-  transition: opacity 0.15s;
-}
-
-.TikTok:hover,
-.Facebook:hover,
-.Instagram:hover {
-  color: black;
-  transition: opacity 0.15s;
-}
-
-.Services:active,
-.Support:active,
-.About:active,
-.Home:active {
-  opacity: 0.4;
-}
-
-.TikTok:active,
-.Facebook:active,
-.Instagram:active {
-  opacity: 0.4;
-}
-
-button, .GetQuote, .loginButton {
-  border: none;
-  cursor: pointer;
-  transition: opacity 0.15s;
-}
-
-.GetQuote {
-  border-radius: 5px;
-  width: 140px;
-  height: 35px;
-  background-color: white;
-  color: black;
-  font-size: 18px;
-}
-
-.GetQuote:hover {
-  opacity: 0.8;
-}
-
-.GetQuote:active {
-  opacity: 0.4;
-}
-
-.searchButton {
-  border-radius: 20px;
-  width: 120px;
-  height: 43px;
-  background-color: rgba(218, 62, 65, 1);
-  color: black;
-  font-size: 20px;
-}
-
-.searchButton:hover {
-  opacity: 0.8;
-}
-
-.searchButton:active {
-  opacity: 0.4;
-}
-
-section::before {
-  content: "";
+.background-image .overlay {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  backdrop-filter: blur(1px); 
-  z-index: 0; 
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1;
 }
 
-section {
-  position: relative; 
-  background-size: cover;
-  background-position: center;
-  padding: 100px 20px; 
-  text-align: center;
-}
-
-section * {
-  position: relative;
-  z-index: 1; 
-}
-
-.section1 {
+.background-image {
   position: relative;
   width: 100%;
-  height: 70svh;
-  background-image: url(Picture/HomePage\ Background.jpg);
-  background-size: 100% auto;
-  background-position: center 15%;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: flex-start;
-  padding-left: 50px;
-  overflow: hidden;
-  padding-top: 300px;
-  z-index: 2;
+  height: 80vh;
+  overflow: relative;
 }
 
-.section1 h1 {
-  font-family: Anek Latin;
-  font-size: 50px;
-  font-weight: bolder;
-  color: white;
-  text-align: left;
-}
-
-.section1 h2 {
-  font-family: Anek Latin;
-  font-weight: bold;
-  font-size: 15px;
-  color: white;
-  text-align: left;
-}
-
-.section1 h3 {
-  font-family: Anek Latin;
-  font-weight: bold;
-  font-size: 26px;
-  color: white;
-  text-align: left;
-}
-
-.section1 p{
-  font-family: 'Anek Latin', sans-serif;
-  font-weight: normal;
-  font-size: 16px; 
-  color: white;
+.background-image .text {
   position: relative; 
-  margin: 50px 0 0; 
-  padding: 50 50px; 
-  line-height: 1.6; 
-  text-align: left; 
-  max-width: 800px; 
-  z-index: 3;
-  top: 20%;
+  color: white;
+  text-align: left;  
 }
 
 
-.logo {
-  height: 71px;
-  width: 71px;
-  cursor: pointer;
-}
-
-section {
-  padding: 100px 20px;
-  text-align: center;
-}
-
-/* Responsive Design */
-@media (max-width: 768px) {
-  .navbar-one, .navbar-second {
-    padding: 0 20px;
-  }
-
-  
-
-  .navbar-second ul li > a {
-    margin-left: 20px;
-    font-size: 16px;
-  }
-
-  .Home {
-    padding-left: 20px;
-  }
-
-  .Home h1 {
-    font-size: 40px;
-  }
-
-  .Home p {
-    font-size: 24px;
-  }
-}
