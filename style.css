@@ -7,19 +7,28 @@ body{
 }
 
 .navbar{
-  background: white;
-  z-index: 4;
-  position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
   padding: 10px 0;
-  text-shadow: 6px 6px 6px rgb(77, 76, 76);
 }
 
-.navbar .nav-container {
+.navbar .nav-container1 {
   display: flex;
   align-items: center; 
+  z-index: 4;
+  width: 100%;
+  height: 50px;
+}
+
+.navbar .nav-container2 {
+  display: flex;
+  align-items: center;
+  background-color: white; 
+  z-index: 4;
+  position: fixed;
+  width: 100%;
+  height: 102px;
+  text-shadow: 6px 6px 9px rgb(77, 76, 76);
 }
 
 .navbar .options li{
@@ -41,6 +50,66 @@ body{
   cursor: pointer;
   margin-right: 15px;
 }
+
+.nav-container2 .search{
+margin-left: auto;
+margin-right: 20px;
+cursor: pointer;
+border-style: none;
+}
+
+.nav-container1 .socials{
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+  border-style: none;
+  }
+
+  .nav-container1{
+    background-color: rgba(182, 7, 10, 1);
+    width: 100%;
+    height: 50px;
+    position:fixed;
+  }
+
+.nav-container2 .search .searchButton{
+  background-color: rgba(218, 72, 62, 1);
+  text-decoration: none;
+  width: 120px;
+  margin-left: auto;
+  margin-right: 20px;
+  cursor: pointer;
+  border-style: none;
+  height: 43px;
+  border-radius: 20px;
+  }
+
+  .nav-container1 .contacts{
+    margin-right: auto;
+    margin-left: 20px;
+    cursor: pointer;
+    border-style: none;
+    border-radius: 20px;
+    }
+
+  .search-input {
+    display: none;
+    padding: 8px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+    width: 200px;
+  }
+
+.nav-container2 .search a{
+  text-decoration: none;
+  cursor: pointer;
+  color: black;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: Inter;
+  }
 
 .background-image img{
   background-size: contain;
