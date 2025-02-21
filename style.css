@@ -15,7 +15,6 @@ body{
   list-style-type: none;
   display: inline;
   margin: 20px;
-  color: rgba(182, 9, 7, 1);
   font-family: Inter;
   font-size: 20px;
   font-weight: normal;
@@ -23,6 +22,11 @@ body{
   cursor: pointer;
   text-shadow: 6px 6px 6px rgba(0, 0, 0, 0.4);;
 
+}
+
+.navbar .options li a{
+text-decoration: none;
+color: rgba(182, 9, 7, 1);
 }
 
 .navbar .logo img {
@@ -163,6 +167,39 @@ body .overlay {
   top: 65%;
   left: 2%;
   color: white;
+  z-index: 3;
+}
+
+.right i{
+  z-index: 3;
+  position: fixed;
+}
+
+.left h5{
+  color: white;
+  position: absolute;
+  z-index: 3;
+}
+
+.left button{
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(218, 62, 65, 1);
+  color: white;
+  border: none;
+}
+
+.right button{
+  position: absolute;
+  z-index: 3;
+  background-color: rgba(218, 62, 65, 1);
+  color: white;
+  border: none;
+}
+
+.right h5{
+  color: white;
+  position: absolute;
   z-index: 3;
 }
 
