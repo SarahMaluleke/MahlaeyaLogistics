@@ -265,3 +265,25 @@ body .overlay {
   height: 60px;
   width: 174px;
 }
+
+.OurService {
+  color: black;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  z-index: 3; 
+}
+
+.p1{
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 3;
+}
+
+.p2{
+  color: black;
+  font-size: 18px;
+  font-weight: bold;
+  z-index: 3;
+}
