@@ -170,39 +170,6 @@ body .overlay {
   z-index: 3;
 }
 
-.right i{
-  z-index: 3;
-  position: fixed;
-}
-
-.left h5{
-  color: white;
-  position: absolute;
-  z-index: 3;
-}
-
-.left button{
-  position: absolute;
-  z-index: 3;
-  background-color: rgba(218, 62, 65, 1);
-  color: white;
-  border: none;
-}
-
-.right button{
-  position: absolute;
-  z-index: 3;
-  background-color: rgba(218, 62, 65, 1);
-  color: white;
-  border: none;
-}
-
-.right h5{
-  color: white;
-  position: absolute;
-  z-index: 3;
-}
-
 .text #text1{
   font-family: Anek Latin;
   font-size: 18px;
@@ -229,3 +196,72 @@ body .overlay {
   padding: 0;
 }
 
+.right {
+  position: absolute;
+  right: 12px; 
+  top: 48em; 
+  transform: translateY(-50%); 
+  text-align: right;
+  z-index: 3;
+}
+
+.right h5{
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.right button{
+  background-color: rgba(218, 62, 65, 1);
+  color: white;
+  font-family: "Anek Latin";
+  font-size: 20px;
+  border-style: none;
+  border-radius: 20px;
+  height: 46px;
+  width: 180px;
+  margin-right: 25px;
+}
+
+.right i {
+  color: green;
+  font-size: 90px;
+  position: sticky; 
+  right: 20px; 
+  z-index: 1000; 
+  display: block; 
+  margin-top: 10px; 
+  text-align: right;
+}
+
+.left{
+  position: absolute;
+  left: 12px; 
+  top: 48em; 
+  transform: translateY(-50%); 
+  text-align: right;
+  z-index: 3;
+}
+
+.left h5{
+  font-family: Inter;
+  font-size: 18px;
+  font-weight: normal;
+  color: white;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.left button{
+  background-color: rgba(218, 62, 65, 1);
+  color: white;
+  font-family: "Anek Latin";
+  font-size: 24px;
+  border-style: none;
+  border-radius: 20px;
+  height: 60px;
+  width: 174px;
+}
